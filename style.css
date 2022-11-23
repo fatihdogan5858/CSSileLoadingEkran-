@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "İnter", sans-serif;
+    background-color: #faedcd ;
+    color: #e63946;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.kinetic{
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+.kinetic::after, .kinetic::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color:#e63946;
+    border-radius: 50%;
+}
+
+.kinetic::before{
+transform: rotate(90deg);
+}
+
+@keyframes rotateA{
+0%,25%{
+    rotate: 0%;
+}
+50%,75%{}
+
+}
